@@ -1,10 +1,8 @@
 package com.torquato.cucumber.example;
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-import java.time.LocalDate;
+import java.time.*;
 
 @RequiredArgsConstructor
 public class PersonService {
@@ -15,15 +13,19 @@ public class PersonService {
         return null; //TODO Do it!
     }
 
-
     @Getter
     @Setter
     public static class Person {
+
         private String name;
-        private LocalDate birthDay;
+        private LocalDate birthDate;
+
     }
 
     public interface PersonRepository {
+
         void save(Person person);
+
     }
+
 }

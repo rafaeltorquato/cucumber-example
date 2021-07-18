@@ -1,14 +1,14 @@
 package com.torquato.cucumber.example;
 
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-import java.math.BigDecimal;
-import java.util.Objects;
+import java.math.*;
+import java.util.*;
 
 @NoArgsConstructor
 public class Calculator {
 
-    private BigDecimal value;
+    private BigDecimal value = BigDecimal.ZERO;
 
     public Calculator(BigDecimal value) {
         Objects.requireNonNull(value);
