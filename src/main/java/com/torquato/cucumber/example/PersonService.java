@@ -1,8 +1,10 @@
 package com.torquato.cucumber.example;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
-import java.time.*;
+import java.time.LocalDate;
 
 @RequiredArgsConstructor
 public class PersonService {

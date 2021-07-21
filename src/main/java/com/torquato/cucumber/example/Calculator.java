@@ -1,9 +1,9 @@
 package com.torquato.cucumber.example;
 
-import lombok.*;
+import lombok.NoArgsConstructor;
 
-import java.math.*;
-import java.util.*;
+import java.math.BigDecimal;
+import java.util.Objects;
 
 @NoArgsConstructor
 public class Calculator {

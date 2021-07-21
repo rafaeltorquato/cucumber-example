@@ -1,10 +1,11 @@
 package com.torquato.cucumber.example;
 
-import com.google.gson.*;
-import io.cucumber.java.*;
-import lombok.*;
+import com.google.gson.Gson;
+import io.cucumber.java.ParameterType;
+import lombok.SneakyThrows;
 
-import java.nio.file.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class CucumberCustomTypes {
 
