@@ -1,8 +1,8 @@
 package com.torquato.cucumber.example;
 
-import io.cucumber.java.*;
-import io.cucumber.junit.*;
-import org.junit.runner.*;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
@@ -11,10 +11,4 @@ import org.junit.runner.*;
         plugin = {"pretty", "html:target/cucumber.html"}
 )
 public class CucumberRunnerTest {
-
-    @ParameterType("data/person-.*\\.json")
-    public PersonService.Person person(String jsonPath) {
-        return new PersonService.Person();
-    }
-
 }
